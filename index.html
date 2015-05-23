@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Experience the Center</title>
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -9,6 +11,28 @@
 
 <body>
 
+<!-- Database Connection Setup -->
+<script>
+// check for AJAX request
+
+
+$.ajax({ 
+    headers : {
+        "X-Parse-Application-Id" : "r3Ar552B9EZ21NX93elLQUbNtnX443cmFB4D1AqC",
+        "X-Parse-REST-API-Key" : "JFWxTKPPpba7J0ncrzXjbvDDQfQlUsxRZ44DSr52"
+    },
+     type: "GET",
+     dataType: "json",
+     url: "https://api.parse.com/1/classes/Words",
+     success: function(data){        
+        alert(JSON.stringify(data))
+     }
+});
+         
+
+</script>
+
+      
 <div id="homePage" data-role="page">
   	<!-- Header -->
 	<div class="header"></div>
@@ -37,7 +61,7 @@
 </div> 
 
 <div id="ticketPage" data-role="page"></div>
-    
+          
     <script>
         <!-- Load Other Pages -->
         $('#ticketPage').load('ticket.html');
@@ -47,8 +71,6 @@
 	
         <!-- Load Footer -->
 		$('.footer').load('footer.html');
-	
-		
 		
 	</script>
 	
