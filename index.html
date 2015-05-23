@@ -9,7 +9,7 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
-<body>
+<body >
 
 <!-- Database Connection Setup -->
 <script>
@@ -32,12 +32,11 @@ $.ajax({
 
 </script>
 
-      
-<div id="homePage" data-role="page">
+<div id="homePage" data-role="page" data-theme="b">
   	<!-- Header -->
 	<div class="header"></div>
 	
-  	<div data-role="main" class="ui-content">
+  	<div data-role="main" class="ui-content" >
     	<p>Welcome! If you click on the link below, it will take you to Page Two.</p>
     	<a href="#pagetwo">Go to Page Two</a>
   	</div>
@@ -46,7 +45,7 @@ $.ajax({
 	<div class="footer"></div>
 </div> 
 
-<div id="pagetwo" data-role="page">
+<div id="pagetwo" data-role="page" data-theme="b" >
   	<!-- Header -->
 	<div class="header"></div>
 
@@ -60,8 +59,9 @@ $.ajax({
 	<div class="footer"></div>
 </div> 
 
-<div id="ticketPage" data-role="page"></div>
-          
+
+<div id="ticketPage" data-role="page" data-theme="b"></div>
+    
     <script>
         <!-- Load Other Pages -->
         $('#ticketPage').load('ticket.html');
