@@ -1,34 +1,34 @@
 <div id="content"  >
-
+<div id="details"  >
   <div data-role="main" class="ui-content">
     <div class="ui-grid-a">
       <div class="ui-block-a">
-        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Preview</a><br>
+        <a id="preview" href="#" class="ui-btn ui-corner-all ui-shadow event">Preview</a><br>
         <a href="#" class="ui-btn ui-corner-all ui-shadow event">Program</a><br>
         <a href="#" class="ui-btn ui-corner-all ui-shadow event">Seat Locator</a><br>
       </div>
 
       <div class="ui-block-b">
-        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Sale/Reserve Tickets</a><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Tickets</a><br>
         <a href="#" class="ui-btn ui-corner-all ui-shadow event">Intermission</a><br>
         <a href="#" class="ui-btn ui-corner-all ui-shadow event">Share this</a><br>
       </div>
     </div>
 
   </div>
-
+</div>
 <script>
 var cw = $('.event').width();
 $('.event').css({'padding-top':(cw/2)+'px', 'height':(cw/2)+'px'});
 
   $('#preview').click(function(){
-  $('#content').load('event/preview.html');
+  $('#details').load('event/preview.html');
   });
   $('#program').click(function(){
-  $('#content').load('event/program.html');
+  $('#details').load('event/program.html');
   });
   $('#seatMap').click(function(){
-  $('#content').load('event/seatMap.html');
+  $('#details').load('event/seatMap.html');
   });
   $('#tickets').click(function(){
   $('#content').load('event/ticket.html');
