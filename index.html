@@ -35,45 +35,48 @@ $.ajax({
 
 </script>
 
-<div id="homePage" data-role="page" data-theme="b">
+<div id="app" data-role="page" data-theme="b">
+<div data-role="header" data-theme="b">
+    <h1>Experience the Center</h1>
+</div>
+
+
+<div id="content" >
   	<!-- Header -->
-	<div class="header"></div>
-	
-  	<div data-role="main" class="ui-content" >
-    	<p>Welcome! If you click on the link below, it will take you to Page Two.</p>
-    	<a href="#pagetwo">Go to Page Two</a>
-  	</div>
+	HERE's to say something
+</div>
+
 
   	<!-- Footer -->
-	<div class="footer"></div>
+	<div data-role="footer" data-theme="b">
+    <div data-role="navbar">
+      <ul>
+        <li><a id='home' href="#" data-icon="star" class="ui-btn-active">Events</a></li>
+        <li><a id='about' href="#" data-icon="info">About</a></li>
+        <li><a id='contact' href="#" data-icon="navigation">Contact</a></li>
+      </ul>
+    </div>
 </div> 
 
-<div id="pagetwo" data-role="page" data-theme="b" >
-  	<!-- Header -->
-	<div class="header"></div>
-
-  	<div data-role="main" class="ui-content">
-	    <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
-	    <a href="#homePage">Go to Page One</a>
-    	<a href="#ticketPage">Page3</a>
-	</div>
-
-  	<!-- Footer -->
-	<div class="footer"></div>
-</div> 
-
-
-<div id="ticketPage" data-role="page" data-theme="b"></div>
-    
+    </div>
     <script>
         <!-- Load Other Pages -->
-        $('#ticketPage').load('ticket.html');
+          $('#contact').click(function(){
+      $('#content').load('contact.html');
+  });
+        
 
         <!-- Load Header -->
-        $('.header').load('header.html');
+      
+        $("#content").load("home.html");
+        $('#home').click(function(){
+      $('#content').load('home.html');
+  });
 	
         <!-- Load Footer -->
-		$('.footer').load('footer.html');
+		$('#about').click(function(){
+      $('#content').load('about.html');
+  });
 		
 	</script>
 	
