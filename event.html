@@ -1,19 +1,44 @@
 <div id="content"  >
-  
-  	<div data-role="main" class="ui-content">
-  		<div class="ui-grid-a">
+
+  <div data-role="main" class="ui-content">
+    <div class="ui-grid-a">
       <div class="ui-block-a">
-        <a href="#" class="ui-btn ui-corner-all ui-shadow">First Column Button</a><br>
-        <span>First Column: This is some text. This is some text. This is some text. This is some text. This is some text.</span>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Preview</a><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Program</a><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Seat Locator</a><br>
       </div>
 
       <div class="ui-block-b">
-        <a href="#" class="ui-btn ui-corner-all ui-shadow">Second Column Button</a><br>
-         <span>Second Column: This is some text. This is some text. This is some text. This is some text.</span>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Sale/Reserve Tickets</a><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Intermission</a><br>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow event">Share this</a><br>
       </div>
     </div>
-	    
-	</div>
 
- 
-</div> 
+  </div>
+
+<script>
+var cw = $('.event').width();
+$('.event').css({'padding-top':(cw/2)+'px', 'height':(cw/2)+'px'});
+
+  $('#preview').click(function(){
+  $('#content').load('event/preview.html');
+  });
+  $('#program').click(function(){
+  $('#content').load('event/program.html');
+  });
+  $('#seatMap').click(function(){
+  $('#content').load('event/seatMap.html');
+  });
+  $('#tickets').click(function(){
+  $('#content').load('event/ticket.html');
+  });
+  $('#timer').click(function(){
+  $('#content').load('event/timer.html');
+  });
+  $('#share').click(function(){
+  $('#content').load('event/share.html');
+  });
+
+  </script>
+  </div> 
