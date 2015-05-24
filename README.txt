@@ -1,4 +1,4 @@
-Coder: Jacqueline, Cindy Do, Angela Pang, Sarah Shepherd
+Coders: Jacqueline, Cindy Do, Angela Pang, Sarah Shepherd, Eddy Guo
 Date Created: 2015/05/23
 
 Program: Experience the Center
@@ -13,4 +13,4 @@ Url to the POSTMAN rest client test collection: https://www.getpostman.com/colle
 
 TO CONNECT: (if its not working ask Sarah)
 
-https://b7a762c9.ngrok.io
+http://b7a762c9.ngrok.io
