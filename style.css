@@ -38,3 +38,12 @@
     margin: auto;
     text-align: center;
 }
+
+.headerTitleDiv {
+    background-color: #000000;
+    margin-bottom: 10px;
+}
+
+.headerTitleDiv  > .ui-block-b{
+    background-color: #121212;
+}
