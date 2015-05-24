@@ -9,7 +9,7 @@
 	margin-bottom: 23px;
 }
 
-img {
+.ui-block-a > div > img, .ui-block-b > div > img, .ui-block-c > div > img {
     width: 100%;
 }
 
