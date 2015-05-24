@@ -1,8 +1,20 @@
-<div id="content"  >
-  
-  	<div data-role="main" class="ui-content">
-	    <p>This is another page</p>
-	</div>
+<a href="#" id="return" class="ui-btn ui-icon-back ui-btn-icon-left"></a>
+<div id="details"  >
+  <div data-role="main" class="ui-content">
 
- 
-</div> 
+  	<H2>Tickets</H2>
+  	<p><B> Reserve/Purchase  Tickets for this event</B></p>
+    <p>Incorporate the setup from the current app except allow for e-ticking</p> 
+    <p>All the information is already available (seat has been assigned)</p>
+    <hr>
+<br>
+    <p><B> Tickets Purchased </B></p>
+    	<p>after purchasing a ticket via this app, it would be available and visible from this page</p>
+  
+
+</div>
+<script>
+$('#return').click(function(){
+            $('#content').load('event.html');
+        });
+</script>
