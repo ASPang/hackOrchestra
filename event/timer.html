@@ -1,1 +1,55 @@
 
+
+<a href="#" id="return" class="ui-btn ui-icon-back ui-btn-icon-left"></a>
+	<div id="details"  >
+  		<div data-role="main" class="ui-content">
+			<H2>Timer</H2>
+
+			<div class="container">
+			<div id="clock"></div>
+			</div>
+
+
+			<div class="container">
+			<input type="submit" value="START" id="startStopButton" onclick="javascript:onClickStartStopButton();">
+			<input type="submit" value="RESET" id="resetButton" onclick="javascript:onClickSetButton();">
+			</div>
+			<div class="container ttt">
+			<input type="number" id="hours" value="0" maxlength="2"> <b>H</b>&nbsp;
+			<input type="number" id="minutes" value="5" maxlength="2"> <b>M</b>&nbsp;
+			<input type="number" id="seconds" value="0" maxlength="2"> <b>S</b>&nbsp;
+			<input type="submit" id="setButton" value="SET" onclick="javascript:onClickSetButton();" class="smaller">
+		</div>
+
+<div class="container">
+	<input type="submit" id="stopAlarm" value="Mute alarm">
+</div>
+
+<div class="info">
+	<strong>&#9733; TIP &#9733;</strong><br>
+	Set the timer by changing the URL
+	<p>
+	<a href="/5minutes">tickcounter.com<b>/5minutes</b></a>
+	<a href="/2hours 10seconds">tickcounter.com<b>/2hours 10seconds</b></a>
+	</p>
+	Just type the desired time after slash
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/main/js.js"></script>
+				
+		
+    
+    <script src="/static/main/jqc/jquery.plugin.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.0/jquery.countdown.min.js"></script>
+
+	<script type="text/javascript" src="//cdn.jsdelivr.net/soundmanager2/2.97a.20131201/soundmanager2-nodebug-jsmin.js"></script>
+	<script src="/static/main/js/timer.js"></script>
+	
+		</div>
+	</div>
+<script>
+$('#return').click(function(){
+            $('#content').load('event.html');
+        });
+</script>
