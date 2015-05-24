@@ -1,0 +1,24 @@
+<a href="#" id="return" class="ui-btn ui-icon-back ui-btn-icon-left">
+    <div id="eventHeaderBar" ></div>
+    </a>
+<div id="details"  >
+
+<div class="wrapper">
+      <div class="cell">
+        <div id="holder">
+          <div class="digits"></div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+<script>
+    $('#return').click(function(){
+        $('#content').load('event.html');
+    });
+
+     $('#counter').countdown({startTime: "00:20:00:00"});
+    
+    //Load the Event title to the top of the page
+    loadEventTitle(selectedEvent, "eventHeaderBar");
+</script>
