@@ -8,3 +8,23 @@
 #content{
 	margin-bottom: 23px;
 }
+
+img {
+    width: 100%;
+}
+
+.ui-grid-a > .mainBlock {
+    width: 75%;
+}
+
+.ui-grid-a > .smallBlock {
+    width: 25%;
+}
+
+.ui-grid-a > .smallBlock > img{
+    width: 25%;
+}
+
+.ui-block-b > .fullWidth {
+    width: 100%;
+}
