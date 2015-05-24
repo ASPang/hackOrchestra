@@ -1,4 +1,4 @@
-//Parse related keys
+// Parse related keys
 var PARSE_APP = "r3Ar552B9EZ21NX93elLQUbNtnX443cmFB4D1AqC";
 var PARSE_JS = "OtlU7zcmb659UCXtmbKTCC7dKPGM0zmpfYzvWsz4";
 
