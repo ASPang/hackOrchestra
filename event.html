@@ -1,6 +1,11 @@
 <div id="content"  >
 <div id="details"  >
-  <a href="#" id="EventName" class="ui-btn"></a>
+  <!-- Menu Option -->
+  <a href="#" id="EventName" class="ui-btn">
+    <div id="eventHeaderBar" ></div>
+  </a>
+  
+  <!-- Event Options -->
   <div data-role="main" class="ui-content">
     <div class="ui-grid-a">
       <div class="ui-block-a">
@@ -19,27 +24,32 @@
   </div>
 </div>
 <script>
-var cw = $('.event').width();
-$('.event').css({'padding-top':(cw/2)+'px', 'height':(cw/2)+'px'});
+    var cw = $('.event').width();
+    $('.event').css({'padding-top':(cw/2)+'px', 'height':(cw/2)+'px'});
 
-  $('#preview').click(function(){
-  $('#details').load('event/preview.html');
-  });
-  $('#program').click(function(){
-  $('#details').load('event/program.html');
-  });
-  $('#seatMap').click(function(){
-  $('#details').load('event/seatMap.html');
-  });
-  $('#tickets').click(function(){
-  $('#content').load('event/ticket.html');
-  });
-  $('#timer').click(function(){
-  $('#content').load('event/timer.html');
-  });
-  $('#share').click(function(){
-  $('#content').load('event/share.html');
-  });
+    $('#preview').click(function(){
+    $('#details').load('event/preview.html');
+    });
+    $('#program').click(function(){
+    $('#details').load('event/program.html');
+    });
+    $('#seatMap').click(function(){
+    $('#details').load('event/seatMap.html');
+    });
+    $('#tickets').click(function(){
+    $('#details').load('event/ticket.html');
+    });
+    $('#timer').click(function(){
+    $('#details').load('event/timer.html');
+    });
+    $('#share').click(function(){
+    $('#details').load('event/share.html');
+    });
+  
+  
+    //Load the Event title to the top of the page
+    loadEventTitle(selectedEvent, "eventHeaderBar");
 
   </script>
+                
   </div> 

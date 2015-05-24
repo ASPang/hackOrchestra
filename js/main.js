@@ -6,6 +6,7 @@ var headerImg = [];
 var eventID = [];
 var eventName = [];
 var selectedEvent = "";
+var selectedEventNum = "";
 
 $(document).ready(function() {
   Parse.initialize(PARSE_APP, PARSE_JS);
@@ -56,11 +57,26 @@ $(document).ready(function() {
       }
     });
   }
-
-
-
-  //call getNotes immediately
+  
   getNotes();
-
 });
 
+
+//Load the Event title to the top of the page
+function loadEventTitle(selectedEvent, tagName) {
+    var htmlStr = "<strong>" + eventName[selectedEvent];
+    document.getElementById(tagName).innerHTML = htmlStr;
+}
+
+//Load image on share page
+function loadEventShareImg(imgNum, imgTagName) {
+    var htmlStr = "";
+    
+    console.log(imgNum  + " " + imgTagName + " " + "\"" + imgTagName + "\"");
+    if (headerImg[imgNum] != "") {
+        htmlStr = "<img src=\"" + headerImg[imgNum] + "\" onclick=\"eventIconClick(" + imgNum + ")\" />";
+        htmlStr += "<p>" + eventName[imgNum] + "</p>";
+        
+        document.getElementById(imgTagName).innerHTML = htmlStr;
+    }
+}

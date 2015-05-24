@@ -8,12 +8,11 @@
             htmlStr += "<p>" + eventName[imgNum] + "</p>";
             
             document.getElementById(imgTagName).innerHTML = htmlStr;
-            console.log(htmlStr);
         }
     }
     
     function eventIconClick(iconId) {
-        selectedEvent = eventName;
+        selectedEvent = iconId;
         $("#content").load("event.html");
     }
 </script>

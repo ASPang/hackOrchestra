@@ -1,0 +1,67 @@
+<script>
+    
+</script>
+
+<a href="#" id="return" class="ui-btn ui-icon-back ui-btn-icon-left">
+    <div id="eventHeaderBar" ></div>
+</a>
+<div id="details"  >
+  <div data-role="main" class="ui-content">
+
+  	<H2>Share</H2>
+  	
+    <hr>
+     
+        <!-- 3 Block Event -->
+        <div class="ui-grid-b">
+            <div class="ui-block-a ">
+            </div>
+            <div class="ui-block-b ">
+                <div id="eventIconShare"> </div>
+                <script>
+                    loadEventShareImg(selectedEvent, "eventIconShare");
+                </script>                
+            </div>
+            <div class="ui-block-c ">
+            </div>
+        </div><!-- /grid-a -->
+        
+        <hr />
+        
+        <!-- Social Media Icon Block -->
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <a href="https://facebook.com/kwsymphony" target="_blank">
+                            <img src="images/FacebookIcon.png" />
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="https://twitter.com/kw_symphony/" target="_blank">
+                            <img src="images/TwitterIcon.png" />
+                        </a>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="mailto:info@kwsymphony.on.ca" target="_blank">
+                            <img src="images/emailIcon.png" />
+                        </a>
+                    </div>
+                </div><!-- /grid-a -->
+            </div>
+            <div class="ui-block-c">
+            </div>
+        </div><!-- /grid-a -->
+  </div>
+</div>
+
+<script>
+    $('#return').click(function(){
+        $('#content').load('event.html');
+    });
+    
+    //Load the Event title to the top of the page
+    loadEventTitle(selectedEvent, "eventHeaderBar");
+</script>
