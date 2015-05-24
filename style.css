@@ -31,3 +31,10 @@
 #return{
 	width:100%;
 }
+
+#clock {
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
