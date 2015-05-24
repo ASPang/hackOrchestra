@@ -1,4 +1,4 @@
-Coder: Jacqueline, Cindy Do, Angela Pang, Sarah Shepherd
+Coders: Jacqueline, Cindy Do, Angela Pang, Sarah Shepherd, Eddy Guo
 Date Created: 2015/05/23
 
 Program: Experience the Center
