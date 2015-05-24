@@ -1,9 +1,109 @@
+<script>
+    function loadEventIconImg(imgNum, imgTagName) {
+        var htmlStr = "";
+        
+        console.log(imgNum  + " " + imgTagName + " " + "\"" + imgTagName + "\"");
+        if (headerImg[imgNum] != "") {
+            htmlStr = "<img src=\"" + headerImg[imgNum] + "\" onclick=\"eventIconClick(" + imgNum + ")\" />";
+            htmlStr += "<p>" + eventName[imgNum] + "</p>";
+            
+            document.getElementById(imgTagName).innerHTML = htmlStr;
+            console.log(htmlStr);
+        }
+    }
+    
+    function eventIconClick(iconId) {
+        selectedEvent = eventName;
+        $("#content").load("contact.html");
+    }
+</script>
+
 <div id="content" >
   
-<div data-role="main" class="ui-content" >
+    <div data-role="main" class="ui-content" >
     	<p>Welcome! Here's the list of events.</p>
- 
+        
+        <script>
+            console.log(headerImg[0]);
+        </script>
+        
+        
+        <!-- Block Event -->
+        <div class="ui-grid-a">
+            <div class="ui-block-a mainBlock">
+                <div id="mainHeaderImg">  </div>
+                <script>
+                    loadEventIconImg(0, "mainHeaderImg");
+                </script>
+            </div>
+            <div class="ui-block-b smallBlock">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a fullWidth">
+                        <div id="eventIcon1"> </div>
+                        <script>
+                            loadEventIconImg(1, "eventIcon1");
+                        </script>
+                    </div>
+                    <div class="ui-block-a fullWidth">                        
+                        <div id="eventIcon2"> </div>
+                        <script>
+                            loadEventIconImg(2, "eventIcon2");
+                        </script>
+                    </div>
+                </div><!-- /grid-a -->
+            </div>
+        </div><!-- /grid-a -->
+        
+        
+        
+        <!-- 3 Block Event -->
+        <div class="ui-grid-b">
+            <div class="ui-block-a fullWidth">
+                <div id="eventIcon3"> </div>
+                <script>
+                    loadEventIconImg(3, "eventIcon3");
+                </script>
+            </div>
+            <div class="ui-block-b fullWidth">
+                <div id="eventIcon4"> </div>
+                <script>
+                    loadEventIconImg(4, "eventIcon4");
+                </script>
+            </div>
+            <div class="ui-block-c fullWidth">
+                <div id="eventIcon5"> </div>
+                <script>
+                    loadEventIconImg(5, "eventIcon5");
+                </script>
+            </div>
+        </div><!-- /grid-a -->
+        
+        <!-- 3 Block Event -->
+        <div class="ui-grid-b">
+            <div class="ui-block-a fullWidth">
+                <div id="eventIcon6"> </div>
+                <script>
+                    loadEventIconImg(6, "eventIcon6");
+                </script>
+            </div>
+            <div class="ui-block-b fullWidth">
+                <div id="eventIcon7"> </div>
+                <script>
+                    loadEventIconImg(7, "eventIcon7");
+                </script>
+            </div>
+            <div class="ui-block-c fullWidth">
+                <div id="eventIcon8"> </div>
+                <script>
+                    loadEventIconImg(8, "eventIcon8");
+                </script>
+            </div>
+        </div><!-- /grid-a -->
+        
+	</div>
   	</div>
  
 </div> 
+
+
 	
